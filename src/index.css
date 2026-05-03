@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F9F9FB] text-[#1D1B20];
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white border border-slate-200 rounded-2xl shadow-sm;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-6 py-3 text-[#625B71] hover:bg-primary-light hover:text-primary transition-colors cursor-pointer;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-[#4F378B] text-white;
+  }
+}
